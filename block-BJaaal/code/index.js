@@ -18,7 +18,7 @@ let lastName = "Stark";
  alert(`I'm `+firstName+` `+lastName+` of winterfell`);
 
 /* Do the following using string template literal
-  - Alert message saying `Ialert( `I am ${username} and my bio is ${bio}`) am [username] and my bio is [bio]`. Replace square brackets with the value of variable.*/
+  - Alert message saying ( `I am ${username} and my bio is ${bio}`) am [username] and my bio is [bio]`. Replace square brackets with the value of variable.*/
   alert( `I am ${username} and my bio is ${bio}`);
  /* - Alert the message `I'm Arya Stark of Winterfell` using the variable name firstName and lastName.
 */
@@ -29,17 +29,16 @@ const taxPercent = 10;
 
 /* Use string template literal:
   - Alert a message saying `The total amount is [amount]*/
-alert(`Total amount is ${amount}`);
   /* the tax amount is [(amount * taxPercent) / 100]*/
- alert(`The tax amount is  ${amount * taxPercent/100}` );
+alert(`Total amount is ${amount}
+The tax amount is  ${(amount * taxPercent)/100}`);
   /*- Above message should be in two lines
 */
 
 /* Use double quote and escape character:
 
   - Alert a message saying `The total amount is [amount]*/
-  alert("The total amount is\n"+amount)
   /*  the tax amount is [(amount * taxPercent) / 100]*/
-  alert("The tax amount is\n"+amount *  taxPercent /100);
+  alert("the total amount is "+ amount+ "\ntax amount is "+(amount * taxPercent)/100);
   /*- Above message should be in two lines
 */
